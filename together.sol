@@ -1,11 +1,15 @@
 //SPDX-License-Identifier: MIT
-
 pragma solidity ^0.8.0;
 
 contract Together{
     string public TokenName;
     string public TokenAbbr;
     uint public TotalSuppply;
+
+    constructor(){
+        TokenName = "OSCAR";
+        TokenAbbr = "OSC";
+    }
 
     mapping (address => uint) public balances;
 
